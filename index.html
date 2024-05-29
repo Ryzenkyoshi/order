@@ -71,26 +71,26 @@
     <input type="email" id="email" placeholder=" your email.." name="email" required>
     <label for="Order">Orders</label>
     <br>
-    <select id="order" style="width: 200px;">
+    <select id="order" style="width: 220px;">
         <option disabled selected value> -- select your order -- </option>
-        <option value="Combo1" data-img_src="combo1.jpg">Combo 1</option>
-        <option value="Combo1" data-img_src="combo2.jpg">Combo 2</option>
-        <option value="Combo1" data-img_src="combo3.jpg">Combo 3</option>
-        <option value="Combo1" data-img_src="combo4.jpg">Combo 4</option>
-        <option value="Combo1" data-img_src="combo5.jpg">Combo 5</option>
-        <option value="Combo1" data-img_src="combo6.jpg">Combo 6</option>
-        <option value="Combo1" data-img_src="combo7.jpg">Combo 7</option>
-        <option value="Combo1" data-img_src="chick1.jpg"> Chicken Burger Combo 1</option>
-        <option value="Combo1" data-img_src="chick2.jpg"> Chicken Burger Combo 2</option>
-        <option value="Combo1" data-img_src="coffee.jpg">Iced Coffee</option>
-        <option value="Combo1" data-img_src="redtea.jpg">Redtea</option>
-        <option value="Combo1" data-img_src="img4.jpg">Blue Lemon</option>
-        <option value="Combo1" data-img_src="burgerfries.jpg">Burger & Fries</option>
-        <option value="Combo1" data-img_src="spaghetti.jpg">Spaghetti</option>
-        <option value="Combo1" data-img_src="carbonara.jpg">Carbonara</option>
-        <option value="Combo1" data-img_src="nachos.jpg">Nachos</option>
-        <option value="Combo1" data-img_src="fries.jpg">Fries</option>
-        <option value="Combo1" data-img_src="mojos.jpg">Mojos</option>
+        <option value="Combo1" data-img_src="combo1.jpg">Combo 1 &nbsp &nbsp(Burger, Mojos, Carbonara, Redtea)</option>
+        <option value="Combo1" data-img_src="combo2.jpg">Combo 2   &nbsp &nbsp (Burger, Fries, Spaghetti, Fried Chicken, Redtea) </option>
+        <option value="Combo1" data-img_src="combo3.jpg">Combo 3    &nbsp &nbsp (DQ1, DBurger, Nachos, Carbonara or Spaghetti, Redtea or Ice Coffee)</option>
+        <option value="Combo1" data-img_src="combo4.jpg">Combo 4    &nbsp &nbsp (DQ1, Double Burger, Mojos, Carbonara, Redtea)</option>
+        <option value="Combo1" data-img_src="combo5.jpg">Combo 5    &nbsp &nbsp (Tower Burger, Nachos, Carbonara, Redtea)</option>
+        <option value="Combo1" data-img_src="combo6.jpg">Combo 6    &nbsp &nbsp (Tower Burger, Mojos, Spaghetti, Redtea)</option>
+        <option value="Combo1" data-img_src="combo7.jpg">Combo 7    &nbsp &nbsp (Big Meal *2 Burger *2 Nachos, 2 Pasta, Redtea)</option>
+        <option value="Combo1" data-img_src="chick1.jpg"> Chicken Burger Combo 1  &nbsp (Chicken Burger, Mojos, or Fries - Carbonara, Redtea)</option>
+        <option value="Combo1" data-img_src="chick2.jpg"> Chicken Burger Combo 2   &nbsp (Chicken Burger, Mojos, Red Tea)</option>
+        <option value="Combo1" data-img_src="coffee.jpg">Iced Coffee  &nbsp &nbsp</option>
+        <option value="Combo1" data-img_src="redtea.jpg">Redtea  &nbsp &nbsp</option>
+        <option value="Combo1" data-img_src="img4.jpg">Blue Lemon  &nbsp &nbsp </option>
+        <option value="Combo1" data-img_src="burgerfries.jpg">Burger & Fries  &nbsp &nbsp</option>
+        <option value="Combo1" data-img_src="spaghetti.jpg">Spaghetti  &nbsp &nbsp</option>
+        <option value="Combo1" data-img_src="carbonara.jpg">Carbonara  &nbsp &nbsp</option>
+        <option value="Combo1" data-img_src="nachos.jpg">Nachos  &nbsp &nbsp </option>
+        <option value="Combo1" data-img_src="fries.jpg">Fries  &nbsp &nbsp </option>
+        <option value="Combo1" data-img_src="mojos.jpg">Mojos  &nbsp &nbsp</option>
     </select>
     <input type="submit" value="Submit">
 </form>    
@@ -184,7 +184,7 @@
             var text = $(obj.element).text();
             if(data && data['img_src']){
                 img_src = data['img_src'];
-                template = $("<div><img src=\"" + img_src + "\" style=\"width:110%;height:160px;\"/><p style=\"font-weight: 700;font-size:14pt;text-align:center;\">" + text + "</p></div>");
+                template = $("<div><img src=\"" + img_src + "\" style=\"width:110%;height:160px;\"/><p style=\"font-weight: 700;font-size:12pt;text-align:center;\">" + text + "</p><h5></h5></div>");
                 return template;
             }
         }
